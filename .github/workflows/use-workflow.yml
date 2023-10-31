@@ -1,0 +1,7 @@
+name: use work flow
+on: push
+jobs:
+  my-job:
+    uses: XytHu/act/.github/workflows/build-test-deploy.yml@main
+    with:
+      node-version: '18.x'
