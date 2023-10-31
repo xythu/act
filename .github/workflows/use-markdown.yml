@@ -1,0 +1,10 @@
+name: use markdown output
+on: push
+jobs:
+  output-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "# head"
+      - run: echo "this is **bold**, and this is *italic*"
+      - run: echo "* l1"
+      - run: echo "* l2"
